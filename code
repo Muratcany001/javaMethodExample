@@ -1,0 +1,21 @@
+package example;
+import java.util.Scanner;
+public class example1 {
+	static void faktoriyel(int sayi){  // sayi degiskenimizi tanıttık
+		
+		int out =1;
+		for(int i=1;i<=sayi;i++) {   // degiskenimizi kullanarak faktoriyel hesabimizi yaptik
+			out = out*i;
+		}
+		System.out.println(out);  // sonucumuzu yazdiran out degiskenini ekledik 
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Faktoriyelini bulmak istediğiniz sayiyi giriniz"); // sayimizi girdik 
+		int sayi= scan.nextInt();
+	
+		faktoriyel(sayi); // burada da methodumuzu cagirdik ve icerisine sayimizi yazdik
+	}
+
+}
